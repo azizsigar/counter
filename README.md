@@ -1,4 +1,3 @@
-# nuraygulbeyaz
 
 This repository is related to an exxx girlfriend, it contains HTML and CSS files for a web project.
 
