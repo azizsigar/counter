@@ -1,0 +1,72 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    padding: 5px;
+}
+
+body {
+    font-family: 'serif', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* Image container with responsive width */
+.image-container {
+    width: 100%; /* Make it full width */
+    max-width: 600px; /* Limit max width for larger screens */
+    height: auto;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Ensure images are responsive */
+.image-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Responsive Design for Mobile */
+@media (max-width: 768px) {
+    .image-container {
+        max-width: 90%; /* Adjust width for smaller screens */
+    }
+
+    body {
+        padding: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .image-container {
+        max-width: 100%; /* Full width for very small screens */
+    }
+}
+.floating-button {
+    position: fixed;
+    bottom: 20px;  /* Ekranın altından 20px yukarıda */
+    right: 20px;   /* Ekranın sağından 20px içeride */
+    background-color: #007bff; /* Mavi buton */
+    color: white; /* Beyaz yazı */
+    padding: 15px 20px;
+    border-radius: 30px; /* Yuvarlak köşeler */
+    text-decoration: none; /* Alt çizgi kaldır */
+    font-size: 16px;
+    font-weight: bold;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2); /* Hafif gölge */
+    transition: all 0.3s ease; /* Geçiş efekti */
+}
+
+/* Üzerine gelince rengi değiştir */
+.floating-button:hover {
+    background-color: #0056b3;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
