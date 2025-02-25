@@ -2,15 +2,19 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    padding: 5px;
+    padding: 10px;
+    transition-delay: 1s;
 }
 
+
+/* ...existing code... */
 body {
     font-family: 'serif', sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+
 }
 
 /* Image container with responsive width */
